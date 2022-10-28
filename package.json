@@ -1,0 +1,31 @@
+{
+  "name": "cercos-del-oeste",
+  "version": "1.0.0",
+  "description": "Pagina web de Cercos Del Oeste",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cercos",
+    "cercos",
+    "del",
+    "oeste",
+    "cercos",
+    "electricos",
+    "seguridad",
+    "perimetral",
+    "electriocidad",
+    "confianza"
+  ],
+  "author": "Anonymushadow",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "googleapi": "^1.0.2",
+    "nodemailer": "^6.8.0"
+  }
+}

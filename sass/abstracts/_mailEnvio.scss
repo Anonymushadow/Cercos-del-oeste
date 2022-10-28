@@ -1,0 +1,20 @@
+@use "variables";
+
+.sendMail {
+    &__h2 {
+        font-size: 3rem;
+        color: var(--terciario);
+        margin-bottom: 50px;
+    }
+    &__button {
+        background-color: var(--secondary);
+        min-height: 10%;
+        width: 30%;
+        &__a {
+            font-size: 2rem;
+            color: var(--primary);
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

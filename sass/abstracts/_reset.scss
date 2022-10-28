@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Yrsa:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	transition: all .5s ease;
+}
+
+*::selection {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+a {
+	text-decoration: none;
+}
+
+.overflow__hidden {
+	overflow: hidden;
+}
+
+h1, h2 {
+	font-family: 'montserrat-bold', sans-serif;
+}

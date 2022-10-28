@@ -1,0 +1,19 @@
+@use "abstracts/variables";
+@use "abstracts/footer";
+@use "abstracts/navbar";
+@use "abstracts/reset";
+@use "abstracts/scrollBar";
+@use "abstracts/loader";
+@use "abstracts/estructura";
+@use "abstracts/theme__btn__desktop";
+@use "abstracts/nosotros";
+@use "abstracts/servicios";
+@use "abstracts/preguntasFrecuentes";
+@use "abstracts/contactanos";
+@use "abstracts/formularios";
+@use "abstracts/errorPage";
+@use "abstracts/animaciones";
+@use "abstracts/mailEnvio";
+@use "abstracts/inicio";
+
+/*sass --watch sass:Public*/

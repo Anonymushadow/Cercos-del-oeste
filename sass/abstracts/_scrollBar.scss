@@ -1,0 +1,14 @@
+@use "variables";
+
+/*fondo del scroll*/
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: var(--secondary);
+
+	/*bara del scroll*/
+    &-thumb {
+        background-color: var(--primary);
+	    border-radius: 5px;
+	    border-right: 2px solid var(--secondary);
+    }
+}

@@ -1,0 +1,163 @@
+@use "variables";
+
+.navbar {
+	display: flex;
+    height: 50px;
+    width: 100%;
+	bottom:  0;
+	box-shadow: 0px -1px 1px var(--secondary);
+    position: fixed;
+    z-index: 1;
+    &__item {
+        user-select: none;
+        text-decoration: none;
+        color: var(--secondary);
+        &__container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        &__img {
+            user-select: none;
+            height: 45px;
+        }
+        &:hover {
+            color: var(--terciario);
+            transition: none;
+        }
+    }
+    &__desktop {
+        display: none;
+    }
+    &__mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary);
+        height: 100%;
+        width: 100%;
+        gap: 1em;
+        .navbar__item__i:hover {
+            cursor: pointer;
+        }
+        &__item__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            color: var(--secondary);
+        }
+    }
+    &__item__i:hover {
+        cursor: pointer;
+    }
+    &__home__container {
+        height: 65px;
+        min-width: 65px;
+        border-radius: 50%;
+        background-color: var(--secondary);
+        border: 3px solid var(--primary);
+        display: flex;
+        margin-bottom: 25px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px -1px 1px var(--secondary);
+        background-image: url("imagenes/Logo-secondary.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__menu__mobile {
+        height: calc(100vh - 45px);
+        width: 100%;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--secondary);
+        bottom: -1000px;
+        &__item{
+            height: 10%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            &:hover {
+                color: var(--menu__hover__mobile);
+            }
+        }
+    }
+    &__show {
+        bottom: 50px;
+        z-index: 1;
+    }
+    &__burguer {
+        height: 25px;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    &__active {
+        color: var(--secondary);
+        background-color: var(--primary);
+        & .line__1 {
+            opacity: 0;
+            width: 0;
+        }
+        & .line__2{
+            transform: translateY(-3px) rotate(45deg);
+        }
+        & .line__3{
+            transform: translateY(-11px) rotate(-45deg);
+        }
+    }
+
+    @media (min-width: 764px) {
+        & {
+            border-top: none;
+            position: sticky;
+            top: 0;
+            box-shadow: 0px 1px 1px var(--secondary);
+            &__desktop {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+                background-color: var(--primary);
+            }
+            &__item:hover {
+                color: var(--terciario);
+            }
+            &__home__container {
+                margin-bottom: 0;
+                margin-top: 20px;
+                box-shadow: 0px 1px 1px var(--secondary);
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            &__mobile {
+                display: none;
+            }
+            &__menu__mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+.line__1, .line__2, .line__3 {
+    border-radius: 5px;
+    background-color: var(--secondary);
+    width: 100%;
+    height: 2px;
+}

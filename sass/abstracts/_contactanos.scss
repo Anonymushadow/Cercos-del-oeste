@@ -1,0 +1,10 @@
+.contacto {
+    &__h1 {
+        font-size: 3rem;
+        color: var(--secondary);
+    }
+    &__p {
+        font-size: 2rem;
+        margin: 0 10px 0 10px;
+    }
+}

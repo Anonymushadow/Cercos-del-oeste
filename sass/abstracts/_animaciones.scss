@@ -1,0 +1,40 @@
+.fLeft {
+    float: left;
+}
+
+.fRight {
+    float: right;
+}
+
+.animado {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.mostrarElementoIzq {
+    animation: leftTransition 1s;
+}
+
+.mostrarElementoDer {
+    animation: rightTransition 1s;
+}
+
+@keyframes leftTransition {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightTransition {
+    0% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,19 @@
+@mixin crearFlex($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+@mixin Height__Width($height, $width){
+    height: $height;
+    width: $width;
+}
+
+
+@function pixeles-rem($pixeles){
+    $rem: math.div($pixeles, 16) * 1rem;
+    @return $rem;
+}
+
+//@include mixinfunc.crearFlex(center);
+//font-size: mixinfunc.pixeles-rem(50);

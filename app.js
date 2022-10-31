@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 require("dotenv").config();
 const appRoutes = require("./Routes/routes");
-const mailRoutes = require("./Routes/mail");
+const mailRoutes = require("./Routes/mail.js");
 const PORT = require("./config");
 
 //con esta linea hacemos que nuestro programa entienda los datos del formulario

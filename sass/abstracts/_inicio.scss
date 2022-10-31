@@ -15,6 +15,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &__logo {
+            filter: drop-shadow(2px 4px 6px black);
+            object-fit: contain;
+        }
     }
     &__seccion__container {
         box-shadow: 0 0 10px var(--secondary);

@@ -4,6 +4,7 @@ const path = require("path");
 require("dotenv").config();
 const appRoutes = require("./Routes/routes");
 const mailRoutes = require("./Routes/mail");
+const PORT = require("./config");
 
 //con esta linea hacemos que nuestro programa entienda los datos del formulario
 app.use(express.urlencoded({extended: false}));
@@ -27,8 +28,6 @@ appRoutes.get("/", (req, res)=>{
 app.get("*", (req, res)=>{
     res.render("404.ejs");
 });
-
-const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, ()=>{
     console.log(`Server escuchando en el puerto http://localhost:${PORT}`);

@@ -29,7 +29,7 @@
   background-image: url("imagenes/Logo-primary.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50%;
+  background-size: contain;
   min-height: 50vw;
 }
 .footer__apartados__container {
@@ -888,6 +888,10 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.inicio__seccion__img__logo {
+  filter: drop-shadow(2px 4px 6px black);
+  object-fit: contain;
 }
 .inicio__seccion__container {
   box-shadow: 0 0 10px var(--secondary);

@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 const path = require("path");
 require("dotenv").config();
-const appRoutes = require("./src/Routes/routes");
-const mailRoutes = require("./src/Routes/mail.js");
-const PORT = require("./src/config");
+const appRoutes = require("./Routes/routes");
+const mailRoutes = require("./Routes/mail.js");
+const PORT = require("./config");
 
 //con esta linea hacemos que nuestro programa entienda los datos del formulario
 app.use(express.urlencoded({extended: false}));
@@ -12,8 +12,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.set("view engine", "ejs");
-app.set("views", __dirname + "./src/Views");
-app.use(express.static(path.join(__dirname, '.src/public')));
+app.set("views", __dirname + "/Views");
+app.use(express.static(path.join(__dirname, 'public')));
 app.use("/", appRoutes);
 app.use("/mail", mailRoutes);
 

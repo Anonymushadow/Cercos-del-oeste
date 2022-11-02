@@ -1,6 +1,6 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
-const { google } = require("googLeapi");
+const { google } = require("googleapi");
 const Mail = require("nodemailer/lib/mailer");
 const routerForm = express.Router();
 

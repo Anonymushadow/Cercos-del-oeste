@@ -1,11 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res)=>{
-    res.render("index.ejs", {
-        pagina: "inicio"
-    });
-});
+
 
 router.get("/inicio", (req, res)=>{
     res.render("inicio.ejs", {titulo: "Sobre Nosotros"});

@@ -26,7 +26,7 @@ appRoutes.get("/", (req, res)=>{
 });
 
 app.get("*", (req, res)=>{
-    res.render("404.ejs");
+    res.render("partials/404.ejs");
 });
 
 app.listen(PORT, ()=>{

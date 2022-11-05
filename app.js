@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.set("view engine", "ejs");
-app.set("views", __dirname + "/Views");
+app.set("views", __dirname + "/Views/partials");
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/", appRoutes);
 app.use("/mail", mailRoutes);

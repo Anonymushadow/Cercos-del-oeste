@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("./templates/cabecera", {titulo: "la seguridad que mereces"}) %>
+<%- include("partials/templates/cabecera", {titulo: "la seguridad que mereces"}) %>
 <body class="body">
-    <%- include("./templates/loader") %>    
-    <%- include("./templates/navbar") %>
+    <%- include("partials/templates/loader") %>    
+    <%- include("partials/templates/navbar") %>
     <div class="content">
         <article class="main" id="main">
-            <%- include("./inicio") %>
+            <%- include("partials/inicio") %>
         </article>
     </div>
     <footer class="footer">
-        <%- include("./templates/footer") %>
+        <%- include("partials/templates/footer") %>
      </footer>  
     <script src="scripts.js"></script>
 </body>

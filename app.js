@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/Views");
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'Public')));
 app.use("/", appRoutes);
 app.use("/mail", mailRoutes);
 

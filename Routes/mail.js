@@ -45,8 +45,8 @@ routerForm.post("/", (req, res)=>{
 }
 
 sendMail()
-.then((result) => res.status(200).render("mensajeDeEnvio.ejs", {texto: "Su mail se ha enviado con exito, le responderemos lo antes posbile, gracias por su tiempo"}))
-.catch((e) => res.status(500).render("mensajeDeEnvio.ejs", {texto: "Lo sentimos pero ha ocurrido un problema, por favor reintentelo mas tarde"}));
+.then((result) => res.status(200).render("partials/mensajeDeEnvio.ejs", {texto: "Su mail se ha enviado con exito, le responderemos lo antes posbile, gracias por su tiempo"}))
+.catch((e) => res.status(500).render("partials/mensajeDeEnvio.ejs", {texto: "Lo sentimos pero ha ocurrido un problema, por favor reintentelo mas tarde"}));
 });
 
 

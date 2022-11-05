@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("C:\Users\claud\Desktop\Cercos del oeste\Pagina\Views\Templates\cabecera.ejs", {titulo: "la seguridad que mereces"}) %>
+<%- include("./templates/cabecera", {titulo: "la seguridad que mereces"}) %>
 <body class="body">
-    <%- include("C:\Users\claud\Desktop\Cercos del oeste\Pagina\Views\Templates\loader.ejs") %>    
-    <%- include("C:\Users\claud\Desktop\Cercos del oeste\Pagina\Views\Templates\navbar.ejs") %>
+    <%- include("./templates/loader") %>    
+    <%- include("./templates/navbar") %>
     <div class="content">
         <article class="main" id="main">
-            <%- include("C:\Users\claud\Desktop\Cercos del oeste\Pagina\Views\inicio.ejs") %>
+            <%- include("./inicio") %>
         </article>
     </div>
     <footer class="footer">
-        <%- include("C:\Users\claud\Desktop\Cercos del oeste\Pagina\Views\Templates\footer.ejs") %>
+        <%- include("./templates/footer") %>
      </footer>  
     <script src="scripts.js"></script>
 </body>

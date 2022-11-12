@@ -26,7 +26,6 @@
   width: 100%;
   padding-top: 20px;
   user-select: none;
-  background-image: url("imagenes/Logo-primary.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -86,7 +85,8 @@
   color: var(--terciario);
 }
 .footer__gwc__img {
-  height: 18px;
+  height: 30px;
+  margin-bottom: -10px;
   margin-left: 5px;
 }
 @media (min-width: 764px) {
@@ -111,6 +111,7 @@
     text-align: center;
     float: right;
     color: var(--terciario);
+    margin-bottom: 20px;
   }
   .footer__logo__container {
     min-height: 100px;
@@ -464,6 +465,19 @@ body::-webkit-scrollbar-thumb {
   .nosotros__p {
     width: 50%;
   }
+}
+
+.logo_nst {
+  filter: drop-shadow(2px 4px 6px var(--secondary));
+}
+.logo_nst_dos {
+  filter: drop-shadow(2px 4px 6px var(--secondary));
+}
+.logo_nst_tres {
+  filter: drop-shadow(2px 4px 6px var(--secondary));
+}
+.logo_nst_cuatro {
+  filter: drop-shadow(2px 4px 6px var(--secondary));
 }
 
 .servicios__h1 {

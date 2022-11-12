@@ -60,3 +60,15 @@
     }
 }
 
+.logo_nst {
+    filter: drop-shadow(2px 4px 6px var(--secondary));
+    &_dos{
+        filter: drop-shadow(2px 4px 6px var(--secondary));
+    }
+    &_tres {
+        filter: drop-shadow(2px 4px 6px var(--secondary));
+    }
+    &_cuatro {
+        filter: drop-shadow(2px 4px 6px var(--secondary));
+    }
+}

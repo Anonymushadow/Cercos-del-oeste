@@ -3,6 +3,7 @@ const nodemailer = require("nodemailer");
 const { google } = require("googleapi");
 const Mail = require("nodemailer/lib/mailer");
 const routerForm = express.Router();
+require("dotenv");
 
 //verificar mail
 function validarEmail(valor) {
@@ -22,15 +23,15 @@ routerForm.post("/", (req, res)=>{
             host: "smtp.gmail.com",
             port: 587,
             auth: {
-                user: "claudelnahuel22@gmail.com",
-                pass: "rqpowhrhuiwlvmge"
+                user: process.env.USER,
+                pass: process.env.PASSWORD
             }
         }
         if(validarEmail(email)){
             const mensaje = {
                 from: `${email}`,
-                to: `claudelnahuel22@gmail.com`,
-                subject: `Cercos del oeste`,
+                to: process.env.TO,
+                subject: process.env.SUBJECT,
                 text: `
                 Mail: ${email}
                 Mensaje: ${msg}

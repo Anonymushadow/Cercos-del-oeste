@@ -4,7 +4,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: Geneva, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
 	transition: all .5s ease;
 }
 
@@ -15,12 +17,19 @@
 
 a {
 	text-decoration: none;
+	text-align: center;
 }
 
 .overflow__hidden {
 	overflow: hidden;
 }
 
-h1, h2 {
-	font-family: 'montserrat-bold', sans-serif;
+h1{
+	font-size: calc(3em + 2vw);
+	font-weight: 700!important;
+}
+
+h2 {
+	font-size: calc(2em + 1vw);
+    font-weight: 300!important;
 }

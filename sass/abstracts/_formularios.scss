@@ -55,6 +55,7 @@
         filter: brightness(.4);
         color: var(--primary);
         margin-bottom: 16px;
+        font-size: 2rem;
         &:hover {
             cursor: pointer;
             filter: brightness(100%);

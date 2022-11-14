@@ -200,6 +200,7 @@
   justify-content: space-around;
   background-color: var(--secondary);
   bottom: -1000px;
+  font-size: 1.5rem;
 }
 .navbar__menu__mobile__item {
   height: 10%;
@@ -283,7 +284,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Geneva, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
   transition: all 0.5s ease;
 }
 
@@ -294,14 +297,21 @@
 
 a {
   text-decoration: none;
+  text-align: center;
 }
 
 .overflow__hidden {
   overflow: hidden;
 }
 
-h1, h2 {
-  font-family: "montserrat-bold", sans-serif;
+h1 {
+  font-size: calc(3em + 2vw);
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-size: calc(2em + 1vw);
+  font-weight: 300 !important;
 }
 
 /*fondo del scroll*/
@@ -744,6 +754,7 @@ body::-webkit-scrollbar-thumb {
   filter: brightness(0.4);
   color: var(--primary);
   margin-bottom: 16px;
+  font-size: 2rem;
 }
 .form__button:hover {
   cursor: pointer;
@@ -887,7 +898,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .inicio__h1 {
-  font-size: 3rem;
   color: var(--secondary);
   margin-bottom: 10px;
 }
@@ -911,6 +921,8 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 0 10px var(--secondary);
   margin: 20px 10px;
   padding: 10px;
+  font-size: calc(2em + 1vw);
+  font-weight: 700 !important;
 }
 .inicio__seccion__container__titulo {
   padding: 10px;

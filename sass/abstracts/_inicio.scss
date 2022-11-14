@@ -1,6 +1,5 @@
 .inicio {
     &__h1 {
-        font-size: 3rem;
         color: var(--secondary);
         margin-bottom: 10px;
     }
@@ -24,6 +23,8 @@
         box-shadow: 0 0 10px var(--secondary);
         margin: 20px 10px;
         padding: 10px;
+        font-size: calc(2em + 1vw);
+        font-weight: 700!important;
         &__titulo {
             padding: 10px;
             font-size: 2rem;

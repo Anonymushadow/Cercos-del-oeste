@@ -29,8 +29,7 @@ const startTheme = ()=>{
     function dark(){
         variablesTheme.color.style.setProperty('--primary', '#FFB700');
         variablesTheme.color.style.setProperty('--secondary', '#0a0a0a');
-        variablesTheme.color.style.setProperty('--terciario', '#8d4925');
-        variablesTheme.color.style.setProperty('--menu__hover__mobile', '#fff');
+        variablesTheme.color.style.setProperty('--terciario', '#000');
         let homeImage = document.querySelectorAll(".navbar__item__img");
         for(let i = 0; i < variablesTheme.inicioLink.length; i++){
             inicioLink[i].style.backgroundImage = "url('./imagenes/logo/logo_primary.png')";
@@ -42,7 +41,6 @@ const startTheme = ()=>{
         variablesTheme.color.style.setProperty('--primary', '#0a0a0a');
         variablesTheme.color.style.setProperty('--secondary', '#FFB700');
         variablesTheme.color.style.setProperty('--terciario', '#fff');
-        variablesTheme.color.style.setProperty('--menu__hover__mobile', '#8d4925');
         let homeImage = document.querySelectorAll(".navbar__item__img");
         for(let i = 0; i < variablesTheme.inicioLink.length; i++){
             inicioLink[i].style.backgroundImage = "url('./imagenes/logo/logo_secondary.png')";

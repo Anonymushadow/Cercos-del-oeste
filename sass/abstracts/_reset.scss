@@ -24,6 +24,10 @@ a {
 	overflow: hidden;
 }
 
+h1, h2, .inicio__seccion__container__leer__mas {
+	text-align: center;
+}
+
 h1{
 	font-size: calc(3em + 2vw);
 	font-weight: 700!important;

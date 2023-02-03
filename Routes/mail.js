@@ -23,15 +23,15 @@ routerForm.post("/", (req, res)=>{
             host: "smtp.gmail.com",
             port: 587,
             auth: {
-                user: process.env.USER,
-                pass: process.env.PASSWORD
+                user: process.env.USER || cercosdeloeste.trabajos@gmail.com,
+                pass: process.env.PASSWORD || "fqeknktpilztyuhx"
             }
         }
         if(validarEmail(email)){
             const mensaje = {
                 from: `${email}`,
-                to: process.env.TO,
-                subject: process.env.SUBJECT,
+                to: process.env.TO || "cercosdeloeste.trabajos@gmail.com",
+                subject: process.env.SUBJECT || "Cercos del oeste",
                 text: `
                 Mail: ${email}
                 Mensaje: ${msg}

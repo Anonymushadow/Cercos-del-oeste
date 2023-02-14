@@ -10,7 +10,7 @@
     }
     &__number {
         color: var(--terciario);
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold;
         display: flex;
         flex-direction: column;
@@ -33,7 +33,7 @@
         align-items: center;
     }
     &__descripcion {
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: var(--terciario);
         text-align: center;
     }
@@ -57,5 +57,5 @@
 .link__btn__home__back{
     height: 100%;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }

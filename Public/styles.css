@@ -447,6 +447,8 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 100px;
   height: 100%;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;  
 }
 .nosotros__img {
   width: 100%;
